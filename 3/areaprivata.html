@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="privatearea">
+    <h1>your information:</h1>
+    <p id="mail"></p>
+    <p id="password"></p>
+    </div>
+    <script>
+        const mail=document.getElementById("mail")
+        const password=document.getElementById("password");
+        mail.textContent=sessionStorage.getItem("cred").split("åååå")[0];
+        password.textContent=sessionStorage.getItem("cred").split("åååå")[1]
+    </script>
+</body>
+</html>
